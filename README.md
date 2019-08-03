@@ -8,7 +8,7 @@ The codes are provided to calculate the estimated type I error and power for Bay
 
 •	Model 2:
 
-The design matrix is generated using the SAS software. We give brief description of the R files below:
+The design matrix is generated using the SAS software and the design matrices are stored in the "design_mat" folder. We give brief description of the R files below:
 
 1. model1_power_bayesian
 
@@ -59,3 +59,7 @@ Arguments
 n: 
 
 Output: Power.
+
+6. design_mat
+
+This folder contains the design matrices under the following choices of the parameters.
