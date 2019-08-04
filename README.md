@@ -171,27 +171,7 @@ ae_val, be_val: Prior parameters for sig2_e
 
 Output: Power for different choices of parameters.
 
-3. model1_type1_bayesian
-
-This function calculates the Bayesian estimated type I error under model 1 for a given value of the parameters.
-
-Arguments
-
-Same as model1_power_bayesian
-
-Output: Estimated type I error and corresponding plots for different choices of parameters.
-
-4. model2_type1_bayesian
-
-This function calculates the Bayesian estimated type I error under model 2 for a given value of the parameters.
-
-Arguments
-
-Same as model2_power_bayesian
-
-Output: Estimated type I error and corresponding plots for different choices of parameters.
-
-5. HH_power_var
+3. HH_power_var
 
 This function calculates the variance and power of the Hussey and Hughes model based on Heo's calculation described in the paper "Sample size determinations for stepped-wedge clinical trials from a three-level data hierarchy perspective", Statistical Methods in Medical Research 2018, Vol. 27(2) 480–489 by Moonseong Heo, Namhee Kim, Michael L Rinke, and Judith Wylie-Rosett.
 
@@ -216,6 +196,6 @@ rhoj: correlation between Y_ijk and Y_ij'k' under Model 2
 
 Output: Plots of variance and power.
 
-6. design_mat
+4. design_mat
 
 This folder contains the design matrices under both the models generated from the SAS code provided by the supplement of "Sample size determinations for stepped-wedge clinical trials from a three-level data hierarchy perspective", Statistical Methods in Medical Research 2018, Vol. 27(2) 480–489, Moonseong Heo, Namhee Kim, Michael L Rinke, and Judith Wylie-Rosett. For both the models, the design matrices are generated for b = {0, 2}, c = {1, 2}, p = {1, 2}, K = {5, 10}.
