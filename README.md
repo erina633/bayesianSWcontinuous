@@ -5,36 +5,64 @@ The research is supported by PI: Samiran Ghosh
 The codes are provided to calculate the estimated type I error and power for Bayesian approaches. In this paper, we consider two models:
 
 •	Model 1: Y_{ijk} = beta_0 + u_i + beta_j + gamma_i X_{ij} + e_{ijk}
-# i = 1, ..., I (clusters); j = 1, .., J (timeperiods); k = 1, .., K (subjects)
-# I = cS (cluster in each step X Number of steps)
-# J = b + pS (baseline period under control + periods per step X Number of steps)
-# N = IJK = total number of individuals
-# beta_0: overall fixed intercept
-# u_i: cluster level random intercept, Normal(0, sigma_u^2)
-# beta_j: fixed time effect for jth time
-# gamma_i: fixed treatment effect for ith cluster
-# X_{ij}: Intervention (0 or 1)
-# e_{ijk}: random error, Normal(0, sigma_u^2)
-# ICC = rho = sigma_u^2/(sigma_u^2 + sigma^2) = sigma_u^2/sigma^2
-# where beta = (beta_1, .., beta_{J-1}), gamma = (gamma_1, .., gamma_I)
-# Prior: Normal-Normal-Normal-IG-IG
+ 
+ i = 1, ..., I (clusters); j = 1, .., J (timeperiods); k = 1, .., K (subjects)
+ 
+ I = cS (cluster in each step X Number of steps)
+ 
+ J = b + pS (baseline period under control + periods per step X Number of steps)
+
+ N = IJK = total number of individuals
+
+ beta_0: overall fixed intercept
+
+ u_i: cluster level random intercept, Normal(0, sigma_u^2)
+
+ beta_j: fixed time effect for jth time
+
+ gamma_i: fixed treatment effect for ith cluster
+
+ X_{ij}: Intervention (0 or 1)
+ 
+ e_{ijk}: random error, Normal(0, sigma_u^2)
+ 
+ ICC = rho = sigma_u^2/(sigma_u^2 + sigma^2) = sigma_u^2/sigma^2
+ 
+ where beta = (beta_1, .., beta_{J-1}), gamma = (gamma_1, .., gamma_I)
+ 
+ Prior: Normal-Normal-Normal-IG-IG
 
 •	Model 2: Y_{ijk} = beta_0 + u_i + u_j(i) + gamma_i X_{ij} + e_{ijk}
-# i = 1, ..., I (clusters); j = 1, .., J (timeperiods); k = 1, .., K (subjects)
-# I = cS (cluster in each step X Number of steps)
-# J = b + pS (baseline period under control + periods per step X Number of steps)
-# N = IJK = total number of individuals
-# beta_0: overall fixed intercept
-# u_i: cluster level random intercept, Normal(0, sigma_3^2)
-# u_j(i): random time effect for jth time
-# gamma_i: fixed treatment effect for ith cluster
-# X_{ij}: Intervention (0 or 1)
-# e_{ijk}: random error, Normal(0, sigma_u^2)
-# rho_i = (sigma_3^2  + sigma_2^2)/(sigma_3^2 + sigma_2^2 + sigma^2) = (sigma_3^2  + sigma_2^2)/sigma^2
-# rho_j = (sigma_3^2)/(sigma_3^2 + sigma_2^2 + sigma^2) = (sigma_3^2)/sigma^2
-# Parameter vector: (beta_0, \gamma, sigma_3^2, sigma_2^2, \sigma_e^2)
-# where gamma = (gamma_1, .., gamma_I)
-# Prior: Normal-Normal-IG-IG-IG
+
+i = 1, ..., I (clusters); j = 1, .., J (timeperiods); k = 1, .., K (subjects)
+
+I = cS (cluster in each step X Number of steps)
+
+J = b + pS (baseline period under control + periods per step X Number of steps)
+
+N = IJK = total number of individuals
+
+beta_0: overall fixed intercept
+
+u_i: cluster level random intercept, Normal(0, sigma_3^2)
+
+u_j(i): random time effect for jth time
+
+gamma_i: fixed treatment effect for ith cluster
+
+X_{ij}: Intervention (0 or 1)
+
+e_{ijk}: random error, Normal(0, sigma_u^2)
+
+rho_i = (sigma_3^2  + sigma_2^2)/(sigma_3^2 + sigma_2^2 + sigma^2) = (sigma_3^2  + sigma_2^2)/sigma^2
+
+rho_j = (sigma_3^2)/(sigma_3^2 + sigma_2^2 + sigma^2) = (sigma_3^2)/sigma^2
+
+Parameter vector: (beta_0, \gamma, sigma_3^2, sigma_2^2, \sigma_e^2)
+
+where gamma = (gamma_1, .., gamma_I)
+ 
+Prior: Normal-Normal-IG-IG-IG
 
 The design matrix is generated using the SAS software and the design matrices are stored in the "design_mat" folder. We give brief description of the R files below:
 
