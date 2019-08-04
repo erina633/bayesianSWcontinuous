@@ -72,7 +72,7 @@ This function calculates the Bayesian estimated power under model 1 for a given 
 
 Arguments
 
-n_sim: Simulated data sets
+n_sim: no of simulated data sets
 
 b_val: baseline period under control 
 
@@ -125,7 +125,7 @@ This function calculates the Bayesian estimated power under model 2 for a given 
 
 Arguments
 
-n_sim: Simulated data sets
+n_sim: no of simulated data sets
 
 b_val: baseline period under control 
 
