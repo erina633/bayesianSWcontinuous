@@ -52,13 +52,29 @@ Output: Estimated type I error for different allocations, theta.
 
 5. HH_power_var
 
-This function calculates the variance and power of the HH model based on Heo's calculation described in the paper.
+This function calculates the variance and power of the Hussey and Hughes model based on Heo's calculation described in the paper "Sample size determinations for stepped-wedge clinical trials from a three-level data hierarchy perspective", Statistical Methods in Medical Research 2018, Vol. 27(2) 480–489 by Moonseong Heo, Namhee Kim, Michael L Rinke, and Judith Wylie-Rosett
+
 
 Arguments
 
-n: 
+sig2: total variance 
 
-Output: Power.
+c_val: number of clusters in each step
+
+s_val: total number of steps
+
+p_val: number of periods of a step
+
+k_val: number of participants in each cell
+
+b_val: number of "baseline" periods under a control setup
+
+delta: inntervention effect/sqrt(sig2)
+
+corresponding to (a) Model 1 in (2.1) with respect to ; (b) Model 2 in (2.2) with respect to I for
+xed J = 0:1.
+
+Output: Plots of variance and power.
 
 6. design_mat
 
