@@ -1,4 +1,9 @@
-# variance and power of the HH model based on Heo's calculation
+# Variance and power of the Hussey and Hughes model based on Heo's calculation from the paper 
+#"Sample size determinations for stepped-wedge clinical trials from a three-level data hierarchy perspective"
+#Statistical Methods in Medical Research 2018, Vol. 27(2) 480–489
+#by Moonseong Heo, Namhee Kim, Michael L Rinke, and Judith Wylie-Rosett
+
+
 sig2 = 1
 c_val = 2
 s_val = 5
@@ -47,7 +52,6 @@ fun_rho = function(x){
 rho_val = seq(0, 1, length = 1000)
 var_theta = fun_rho(rho_val)
 
-#par(mfrow = c(2, 2))
 plot(rho_val, var_theta, type = "l", main = "Variance", ylab = expression(paste("Var(", hat(gamma), ")")), xlab = expression(paste(rho[I])))
 rho_val[which(var_theta== max(var_theta))]
 
