@@ -7,7 +7,7 @@
 ####################################################################
 
 #################################################################################
-# Model: Y_{ijk} = beta_0 + u_i + beta_j + gamma_i X_{ij} + e_{ijk}
+# Model 1: Y_{ijk} = beta_0 + u_i + beta_j + gamma_i X_{ij} + e_{ijk}
 # i = 1, ..., I (clusters); j = 1, .., J (timeperiods); k = 1, .., K (subjects)
 # I = cS (cluster in each step X Number of steps)
 # J = b + pS (baseline period under control + periods per step X Number of steps)
@@ -30,7 +30,7 @@
 ##################
 
 # Parameter values
-n_sim = 150  # Simulation size
+n_sim = 150  # no of simulated data sets
 
 b_val = 0         # baseline period under control 
 c_val = 2         # cluster in each step
@@ -39,7 +39,7 @@ S_val = 5        # Number of steps
 K = 10            # number of subjects nested within each period
 
 # Design matrix corresponding to intervention
-X_mat = read.csv("C:/Erina/Paper/Analysis/Continuous_Bayesian_SW/rcode/data/lev3SWdatamodel2b0c2p2K10.csv")
+X_mat = read.csv("lev3SWdata0c2p2K10.csv")
 
 alpha_val = 0.05         # Level of significance
 power_val = 0.8          # Power
