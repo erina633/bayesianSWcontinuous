@@ -1,6 +1,6 @@
 # bayesianSWcontinuous
 R codes for "Bayesian Methods for Cross-sectional Stepped-Wedge Design with Continuous Response".
-This research is supported by PI: Samiran Ghosh
+This research is supported by Samiran Ghosh
 
 The codes are provided to calculate the estimated type I error and power for Bayesian approaches. In this paper, we consider two models:
 
