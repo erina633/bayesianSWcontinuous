@@ -32,7 +32,7 @@
 ##################
 
 # Parameter values
-n_sim = 100  # Simulation size
+n_sim = 1000  # Simulation size
 
 b_val = 0         # baseline period under control 
 c_val = 1         # cluster in each step
@@ -52,7 +52,7 @@ sig2 = 1
 beta_0 = 0               # Overall fixed intercept
 Delta_val = c(0.3, 0.4)  # Delta_val = gamma_i/sigma, here we consider constant Delta_val, that is, gamma_i's are same
 
-n_iter_T = 1000  # No of iterations for MC estimate for posterior probability 
+n_iter_T = 50000  # No of iterations for MC estimate for posterior probability 
 n_thin = 1
 cut_point = .975    # R*: decision rule cut-off value
 
